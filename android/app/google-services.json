@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "800935083470",
+    "project_id": "fantasy-step",
+    "storage_bucket": "fantasy-step.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800935083470:android:366fe79dc20a6e42eaff9f",
+        "android_client_info": {
+          "package_name": "com.fantasystep.app.fantasy_step"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800935083470-ecvts2us8ogls1l3vmreapb0c2m4bjmt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fantasystep.app.fantasy_step",
+            "certificate_hash": "3705b2549456631886b886d30c825c169ccc8412"
+          }
+        },
+        {
+          "client_id": "800935083470-s23pbg6gf009vire2ii2tmloj8bqmpdl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9CytcxvKY1DTfpEAcEtrJ_bcKJZBmvvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800935083470-s23pbg6gf009vire2ii2tmloj8bqmpdl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

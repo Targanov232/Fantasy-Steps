@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<health-permissions xmlns:android="http://schemas.android.com/apk/res/android">
+    <permission-read android:name="android.permission.health.READ_STEPS" />
+    <permission-write android:name="android.permission.health.WRITE_STEPS" />
+</health-permissions>
