@@ -1,29 +1,35 @@
 workflows:
   ios-android-build:
-    name: Build iOS & Android
+    name: Build Android & iOS
     max_build_duration: 60
 
     environment:
       flutter: stable
+      xcode: latest
+      cocoapods: default
 
     scripts:
-      - name: Flutter clean
+      - name: Clean project
         script: flutter clean
 
-      - name: Get packages
+      - name: Get dependencies
         script: flutter pub get
 
-      - name: Build APK
+      # 🔥 ANDROID
+      - name: Build Android APK
         script: flutter build apk --release
 
+      # 🔥 iOS PODS FIX
       - name: Install CocoaPods
         script: |
           cd ios
           pod install
           cd ..
 
-      - name: Build iOS
-        script: flutter build ios --release --no-codesign
+      # 🔥 iOS BUILD (IPA!!!)
+      - name: Build iOS IPA
+        script: flutter build ipa --release
 
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
+      - build/ios/ipa/*.ipa
